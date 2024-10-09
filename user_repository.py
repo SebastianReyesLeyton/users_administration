@@ -37,5 +37,10 @@ def save_users(new_info):
 def get_users(username):
     """
     """
-    load_users()
     return users.get(username)
+
+
+def create_user(username, user_info):
+    """
+    """
+    users[username] = user_info
